@@ -1,6 +1,6 @@
 # Noroff Workflow course assignment
 
-![image](https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png) ![image](https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png)
+![image](https://github.com/test-images/png/blob/main/202105/ia-installing.png?raw=true)
 
 Learn how to use workflows in you work.
 
@@ -8,7 +8,6 @@ Learn how to use workflows in you work.
 
 Using the skills and knowledge from the workflow course, improve the quality of a package by establishing helpful workflows that make the development process more efficient.
 
-- Find a partner to work with or select the example repository.
 - Fork the project repository to your GitHub account.
 - Create a new branch called workflow.
 - Configure the project with eslint, prettier and commit hooks.
@@ -36,7 +35,7 @@ Technology Stack
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:PythonMasterAlexander/social-media-client.git
+git clone https://github.com/jonhavbra87/workflow-ca.git
 ```
 
 2. Install the dependencies:
