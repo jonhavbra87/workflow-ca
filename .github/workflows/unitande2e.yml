@@ -26,7 +26,7 @@ jobs:
       - name: Run ESLint
         run: npm run lint
 
-  test:
+  unit:
     runs-on: ubuntu-latest
 
     strategy:
@@ -69,4 +69,4 @@ jobs:
           CI: true
 
       - name: Run Cypress tests
-        run: npm run test:e2e
+        run: npm run test:e2e-cli
