@@ -68,9 +68,7 @@ npm run lint
 
 Running deployment and test Actions on PR
 
-[![Deploy static content to Pages](https://github.com/jonhavbra87/social-media-client/actions/workflows/pages.yml/badge.svg)](https://github.com/jonhavbra98/social-media-client/actions/workflows/pages.yml)
-
-[![Automated testing with unit tests and end-to-end tests](https://github.com/PythonMasterAlexander/social-media-client/actions/workflows/tests.yml/badge.svg)](https://github.com/PythonMasterAlexander/social-media-client/actions/workflows/tests.yml)
+[![WORKFLOW-CA](https://github.com/jonhavbra87/workflow-ca/actions/workflows/WORKFLOW-CA.yml/badge.svg)](https://github.com/jonhavbra87/workflow-ca/actions/workflows/WORKFLOW-CA.yml)
 
 Run unit tests and e2e tests from the command line:
 
