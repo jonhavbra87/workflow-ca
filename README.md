@@ -66,7 +66,7 @@ npm run lint
 
 ## Testing
 
-Running test Actions on PR
+### Testing with Actions on GitHub
 
 [![Lint](https://github.com/jonhavbra87/workflow-ca/actions/workflows/Lint.yml/badge.svg?branch=workflow)](https://github.com/jonhavbra87/workflow-ca/actions/workflows/Lint.yml)
 
@@ -74,6 +74,7 @@ Running test Actions on PR
 
 [![E2E Test](https://github.com/jonhavbra87/workflow-ca/actions/workflows/E2E-Test.yml/badge.svg?branch=workflow)](https://github.com/jonhavbra87/workflow-ca/actions/workflows/E2E-Test.yml)
 
+### Command line testing
 Run UNIT-tests:
 
 ```
