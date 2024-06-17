@@ -2,7 +2,7 @@
 
 ![image](https://github.com/test-images/png/blob/main/202105/ia-installing.png?raw=true)
 
-Learn how to use workflows in you work.
+Learn how to use workflows in your work.
 
 ## Description
 
@@ -10,12 +10,12 @@ Using the skills and knowledge from the workflow course, improve the quality of 
 
 - Fork the project repository to your GitHub account.
 - Create a new branch called workflow.
-- Configure the project with eslint, prettier and commit hooks.
+- Configure the project with ESLint, prettier and commit hooks.
 - Configure the project with GitHub Actions for build/deploy if required.
 - Record any bugs found during this process in the Issues tab.
 - Configure the project for Jest and Cypress.
 - Create tests to cover the required test cases.
-- Create a Pull Request from workflow into the default branch.
+- Create a Pull Request from the workflow branch into the default branch.
 - Request a review from your peers to help improve your submission.
 - Make any final changes based on this feedback.
 - Submit a link to the Open Pull Request on Moodle.
@@ -66,13 +66,13 @@ npm run lint
 
 ## Testing
 
-Running deploy and tests Actions on PR
+Running deployment and test Actions on PR
 
-[![Deploy static content to Pages](https://github.com/PythonMasterAlexander/social-media-client/actions/workflows/pages.yml/badge.svg)](https://github.com/PythonMasterAlexander/social-media-client/actions/workflows/pages.yml)
+[![Deploy static content to Pages](https://github.com/jonhavbra87/social-media-client/actions/workflows/pages.yml/badge.svg)](https://github.com/jonhavbra98/social-media-client/actions/workflows/pages.yml)
 
-[![Automated testing with unit-test and end-to-end tests](https://github.com/PythonMasterAlexander/social-media-client/actions/workflows/tests.yml/badge.svg)](https://github.com/PythonMasterAlexander/social-media-client/actions/workflows/tests.yml)
+[![Automated testing with unit tests and end-to-end tests](https://github.com/PythonMasterAlexander/social-media-client/actions/workflows/tests.yml/badge.svg)](https://github.com/PythonMasterAlexander/social-media-client/actions/workflows/tests.yml)
 
-Run unit tests and e2e tests from command line:
+Run unit tests and e2e tests from the command line:
 
 ```
 npm run test
@@ -80,7 +80,7 @@ npm run test
 
 ## Contributing
 
-This is a Noroff course assignment delivery by me and contributing on this project is not needed.
+This is a Noroff course assignment delivery by me and contributing to this project is not needed.
 
 ## Contact
 
