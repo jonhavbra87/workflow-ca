@@ -67,8 +67,11 @@ npm run lint
 ## Testing
 
 Running test Actions on PR
+[![Lint](https://github.com/jonhavbra87/workflow-ca/actions/workflows/Lint.yml/badge.svg)](https://github.com/jonhavbra87/workflow-ca/actions/workflows/Lint.yml)
 
-[![WORKFLOW-CA](https://github.com/jonhavbra87/workflow-ca/actions/workflows/WORKFLOW-CA.yml/badge.svg)](https://github.com/jonhavbra87/workflow-ca/actions/workflows/WORKFLOW-CA.yml)
+[![Unit Test](https://github.com/jonhavbra87/workflow-ca/actions/workflows/Unit-Test.yml/badge.svg)](https://github.com/jonhavbra87/workflow-ca/actions/workflows/Unit-Test.yml)
+
+[![E2E Test](https://github.com/jonhavbra87/workflow-ca/actions/workflows/E2E-Test.yml/badge.svg)](https://github.com/jonhavbra87/workflow-ca/actions/workflows/E2E-Test.yml)
 
 Run UNIT-tests:
 
