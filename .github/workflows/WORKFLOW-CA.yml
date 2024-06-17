@@ -2,9 +2,9 @@ name: WORKFLOW-CA
 
 on:
   push:
-    branches: [ main, workflow ]
+    branches: [ master, workflow ]
   pull_request:
-    branches: [ main, workflow ]
+    branches: [ master, workflow ]
   workflow_dispatch:
 
 jobs:
@@ -31,7 +31,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14, 16, 21]
+        node-version: [16, 21]
 
     steps:
       - name: Checkout repository
