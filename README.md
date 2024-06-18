@@ -1,6 +1,6 @@
 # Noroff Workflow course assignment
 
-![image](https://github.com/test-images/png/blob/main/202105/ia-installing.png?raw=true)
+![image]([https://github.com/test-images/png/blob/main/202105/ia-installing.png?raw=true](https://kevinsguides.com/images/seriescontent/coding/devops/filemgmt/github-merges-conflicts-workflow/intro.webp)
 
 Learn how to use workflows in your work.
 
