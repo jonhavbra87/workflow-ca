@@ -11,10 +11,10 @@ export default defineConfig({
     },
   },
   env: {
-    email: process.env.USER_EMAIL,
-    password: process.env.USER_PASSWORD,
-    name: process.env.USER_NAME,
-    avatar: process.env.USER_AVATAR,
-    apiUrl: process.env.API_URL,
+    email: process.env.CYPRESS_USER_EMAIL,
+    password: process.env.CYPRESS_USER_PASSWORD,
+    name: process.env.CYPRESS_USER_NAME,
+    avatar: process.env.CYPRESS_USER_AVATAR,
+    apiUrl: process.env.CYPRESS_API_URL,
   },
 });
