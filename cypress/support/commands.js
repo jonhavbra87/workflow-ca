@@ -46,7 +46,15 @@ Cypress.Commands.add('login', (email, password) => {
 });
 
 Cypress.Commands.add('loginWithTestUser', () => {
-  cy.login(Cypress.env('email'), Cypress.env('password'));
+  const email = Cypress.env('email');
+  const password = Cypress.env('password');
+  cy.log(`Logging in with test user: ${email}`);
+  if (!email || !password) {
+    throw new Error(
+      'Email or password is not defined. Please check your .env file.',
+    );
+  }
+  cy.login(email, password);
 });
 
 Cypress.Commands.add('fillLoginForm', (loginData) => {
