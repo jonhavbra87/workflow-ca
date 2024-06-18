@@ -1,14 +1,7 @@
 import globals from 'globals';
-import { FlatCompat } from '@eslint/eslintrc';
 import js from '@eslint/js';
-import jest from 'eslint-plugin-jest';
-import cypress from 'eslint-plugin-cypress';
-
-// Create an instance of FlatCompat with the recommendedConfig parameter
-const compat = new FlatCompat({
-  recommendedConfig: js.configs.recommended,
-  baseDirectory: import.meta.url,
-});
+import jestPlugin from 'eslint-plugin-jest';
+import cypressPlugin from 'eslint-plugin-cypress';
 
 export default [
   {
@@ -21,22 +14,24 @@ export default [
         ...globals.node,
       },
     },
+    plugins: {
+      js,
+    },
     rules: {
       // Add your custom rules here
     },
   },
   {
     files: ['**/*.test.js'],
-    plugins: {
-      jest,
-    },
-    ...compat.extends('plugin:jest/recommended'),
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
       globals: {
         ...globals.jest,
       },
+    },
+    plugins: {
+      jest: jestPlugin,
     },
     rules: {
       'jest/prefer-expect-assertions': 'off',
@@ -45,10 +40,6 @@ export default [
   },
   {
     files: ['**/*.cy.js'],
-    plugins: {
-      cypress,
-    },
-    ...compat.extends('plugin:cypress/recommended'),
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
@@ -57,6 +48,9 @@ export default [
         ...globals.node,
         ...globals['cypress/globals'],
       },
+    },
+    plugins: {
+      cypress: cypressPlugin,
     },
     rules: {
       'cypress/no-unnecessary-waiting': 'off',
