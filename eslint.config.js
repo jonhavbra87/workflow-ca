@@ -30,6 +30,7 @@ export default [
     plugins: {
       jest,
     },
+    ...compat.extends('plugin:jest/recommended'),
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
@@ -47,6 +48,7 @@ export default [
     plugins: {
       cypress,
     },
+    ...compat.extends('plugin:cypress/recommended'),
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
