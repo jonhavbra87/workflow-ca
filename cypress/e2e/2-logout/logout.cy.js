@@ -1,4 +1,4 @@
-describe('Logout', () => {
+describe('Logout with encrypted data', () => {
   beforeEach(() => {
     cy.visitHome();
     cy.showLoginForm();

@@ -1,4 +1,4 @@
-describe('Login', () => {
+describe('Login with encrypted data', () => {
   beforeEach(() => {
     cy.visitHome();
   });

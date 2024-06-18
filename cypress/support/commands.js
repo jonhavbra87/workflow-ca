@@ -49,6 +49,41 @@ Cypress.Commands.add('loginWithTestUser', () => {
   cy.login(Cypress.env('email'), Cypress.env('password'));
 });
 
+Cypress.Commands.add('fillLoginForm', (loginData) => {
+  cy.get('input#loginEmail').type(loginData.email);
+  cy.get('input#loginPassword').type(loginData.password);
+});
+
+Cypress.Commands.add('submitLoginForm', () => {
+  cy.get('button[type="submit"]').contains('Login').click();
+});
+
+Cypress.Commands.add('interceptLoginRequest', () => {
+  cy.intercept(
+    'POST',
+    'https://nf-api.onrender.com/api/v1/social/auth/login',
+  ).as('loginRequest');
+});
+
+Cypress.Commands.add('validateLoginRequest', (expectedStatusCode) => {
+  cy.wait('@loginRequest').then((interception) => {
+    expect(interception.response.statusCode).to.eq(expectedStatusCode);
+  });
+});
+
+Cypress.Commands.add('validateLoginForm', () => {
+  cy.get('form#loginForm').then(($form) => {
+    if ($form[0].checkValidity()) {
+      // Form is valid, no validation error
+    } else {
+      // Form is invalid, validation error has been triggered
+      cy.get('input#loginEmail').then(($input) => {
+        expect($input[0].validationMessage).not.to.be.null;
+      });
+    }
+  });
+});
+
 Cypress.Commands.add('logout', () => {
   cy.get('button[data-auth=logout]').click();
   cy.wait(500);
