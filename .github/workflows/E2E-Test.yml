@@ -1,0 +1,38 @@
+name: E2E Test
+
+on:
+  push:
+    branches: [ master, workflow ]
+  pull_request:
+    branches: [ master, workflow ]
+  workflow_dispatch:
+
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '21'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Start server
+        run: npm run start &
+        env:
+          CI: true
+
+      - name: Run Cypress tests
+        run: npm run test:e2e-cli
+        env:
+          CYPRESS_USER_EMAIL: ${{ secrets.CYPRESS_USER_EMAIL }}
+          CYPRESS_USER_PASSWORD: ${{ secrets.CYPRESS_USER_PASSWORD }}
+          CYPRESS_USER_NAME: ${{ secrets.CYPRESS_USER_NAME }}
+          CYPRESS_USER_AVATAR: ${{ secrets.CYPRESS_USER_AVATAR }}
+          CYPRESS_API_URL: ${{ secrets.CYPRESS_API_URL }}
