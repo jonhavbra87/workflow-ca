@@ -1,9 +1,5 @@
-# Noroff Workflow Aourse Assignment
-![GitHub Workflow]([https://images.unsplash.com/photo-1590595906931-81f04f0ccebb?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D])
-
-<p align="center">
-Learn how to use workflows in your work.
-</p>
+# Noroff Workflow Course Assignment
+![GitHub_Workflow](https://images.unsplash.com/photo-1590595906931-81f04f0ccebb?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90byWwYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
 ## Description
 
