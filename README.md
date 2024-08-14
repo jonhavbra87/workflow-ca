@@ -1,5 +1,5 @@
 # Noroff Workflow Aourse Assignment
-![GitHub Workflow](https://kevinsguides.com/images/seriescontent/coding/devops/filemgmt/github-merges-conflicts-workflow/intro.webp)
+![GitHub Workflow](https://unsplash.com/photos/white-and-silver-electronic-device-MAYEkmn7G6E)
 
 <p align="center">
 Learn how to use workflows in your work.
