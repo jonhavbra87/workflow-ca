@@ -1,0 +1,12 @@
+{
+  "initial": {
+    "title": "A test post",
+    "body": "This is a initial test post. I hope you like it!",
+    "tags": "Cypress, Testing, Automation"
+  },
+  "updated": {
+    "title": "An updated test post",
+    "body": "This is an updated test post. I hope you like it even more!",
+    "tags": "Cypress, Testing, Automation, Update"
+  }
+}
